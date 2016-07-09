@@ -34,33 +34,7 @@ body{
     z-index:0;
 }
 
-.navbar-inverse {
-     background: #303F9F;
-}
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-    color: #fff;
-    background: #1A237E;
-}
-
-.navbar-inverse .navbar-nav > .open > a,
- .navbar-inverse .navbar-nav > .open > a:hover,
- .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #fff;
-    background: #1A237E;
-}
-
-.navbar-inverse .navbar-nav .open .dropdown-menu> li> a,
-.navbar-inverse .navbar-nav .open .dropdown-menu {
-    background-color: #303F9F;
-    color:#eeeeee;
-}
-
-.navbar-inverse .navbar-nav .open .dropdown-menu> li> a:hover {
-    color:#000000;
-}
 
 ul.nav-tabs{
         width: 140px;
@@ -95,3 +69,87 @@ ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
 ul.nav-tabs.affix{
     top: 30px; /* Set the top position of pinned element */
     }
+
+
+ .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: black;
+}
+
+
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li > a {
+  border-radius: 4px;
+  color: #fff;
+}
+.nav-pills > li > a:hover{
+    color :white;
+    background-color: #242424;
+}
+.nav-pills > li > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.nav-pills > .active > a > .badge {
+  color: #fff;
+  background-color: #222;
+}
+.tabs {
+    border-bottom:1px solid #dcdcdc;
+    margin: 0px;
+}
+
+.tabs:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.tabs li {
+    float:left;
+    width:100px;
+    text-align:center;
+}
+.tabs li.album_tab {
+    width: 130px;
+}
+
+.tabs li a {
+    display: block;
+    padding: 6px 0px;
+}
+.tabs li a:hover {
+    color:#333;
+}
+.tabs .active {
+    border-bottom: 3px solid #0088cc;
+    margin-bottom: -1px;
+}
+.comment-to-who {
+	border-bottom:none !important;
+	margin-bottom:0 !important; 
+}
+.tabs .active a {
+    display:block;
+    padding-bottom: 4px;
+    margin-top:0px;
+}
+.tabs li a{
+    font-size:14px;
+    text-decoration:none;
+    color:#777;
+}
+.tabs .active a span {
+    color: #333;
+}
