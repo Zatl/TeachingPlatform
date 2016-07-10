@@ -67,7 +67,7 @@ ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
         border-radius: 0 0 4px 4px;
     }
 ul.nav-tabs.affix{
-    top: 30px; /* Set the top position of pinned element */
+    top: 50px; /* Set the top position of pinned element */
     }
 
 
