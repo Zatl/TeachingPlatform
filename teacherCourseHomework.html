@@ -1,297 +1,277 @@
 <!DOCTYPE html>
-<html lang                                                          ="zh-CN">
+<html lang="zh-CN">
 
 <head>
-  <meta charset                                                     ="utf-8">
-  <meta http-equiv                                                  ="X-UA-Compatible" content="IE=edge">
-  <meta name                                                        ="viewport" content="width=device-width, initial-scale=1">
-  <title>课程中心</title>
-  <link rel                                                         ="stylesheet" href="css/bootstrap.min.css">
-  <link rel                                                         ="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel                                                         ="stylesheet" href="css/mystyles.css">
-  <link rel                                                         ="stylesheet" href="css/font-awesome.min.css">
-  <link rel                                                         ="stylesheet" href="css/bootstrap-social.css">   
-    <link rel                                                       ="stylesheet" href="css/fileinput.min.css">   
-  <script src                                                       ="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-    <script src                                                     ="js/bootstrap.min.js"></script>
-
-  <!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>课程中心</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/fileinput.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
     <script src                                                     ="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src                                                     ="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-    
-<body data-spy                                                      ="scroll" data-target="#myScrollspy">
-    <nav class                                                      ="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class                                                      ="container">
-      <div class                                                    ="navbar-header">
-        <button type                                                ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class                                               ="sr-only">buttom</span>
-          <span class                                               ="icon-bar"></span>
-          <span class                                               ="icon-bar"></span>
-          <span class                                               ="icon-bar"></span>
-        </button>
-        <a class                                                    ="navbar-brand" href="studentInformation.html"><img src="img/logo.png" height="30" width="70"></a>
-      </div>
-      <div id                                                       ="navbar" class="navbar-collapse collapse">
-        <ul class                                                   ="nav navbar-nav">
-          <li><a href                                               ="teacherCourseCenter.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
-        </ul>
-        <ul class                                                   ="navbar-form navbar-right">
-           <ul class                                                ="nav nav-pills" role="tablist">
-              <li><div class                                        ="btn-group">
-   <button type                                                     ="button" class="btn btn-primary dropdown-toggle" 
-      data-toggle                                                   ="dropdown" style ="background:#0088cc">
-      <a href                                                       ="#" style="color:#fff;text-decoration: none">王老师 <span class="badge">42</span></a> <span class="caret"></span>
-   </button>
-   <ul class                                                        ="dropdown-menu" role="menu">
-      <li><a href                                                   ="#">消息1</a></li>
-      <li><a href                                                   ="#">消息2</a></li>
-      <li><a href                                                   ="#">消息3</a></li>
-      <li class                                                     ="divider"></li>
-      <li><a href                                                   ="studentInformation.html"><span class="glyphicon glyphicon-cog"></span> 修改个人信息</a></li>
-   </ul>
-</div></li>
-              <li><button type                                      ="submit" class="btn btn-primary" style = "background:#0088cc">注销</button></a></li>
-            </ul>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<div class                                                          ="container">
-     <div class                                                     ="row">
-        <div class                                                  ="col-xs-12 col-lg-2" id="myScrollspy">
-            <ul class                                               ="nav nav-tabs nav-stacked" id="sideNav"  data-spy="affix" data-offset-top="50">
-                <li><a href                                         ="teacherCourseCenter.html"><span class="glyphicon glyphicon-home"
-                         aria-hidden                                ="true"></span> 课程主页</a></li>
-                <li><a href                                         ="teacherCourseResource.html"><span class="glyphicon glyphicon-folder-open"
-                         aria-hidden                                ="true"></span> 课程资源</a></li>
-                <li class                                           ="active"><a href                         ="teacherCourseHomework.html"><span class="glyphicon glyphicon-pencil"
-                         aria-hidden                                ="true"></span> 课程作业</a></li>                  
-            </ul>
+
+<body data-spy="scroll" data-target="#myScrollspy">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">buttom</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="studentInformation.html"><img src="img/logo.png" height="30" width="70"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="teacherCourseCenter.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                </ul>
+                <ul class="navbar-form navbar-right">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="background:#0088cc"> <a href="#" style="color:#fff;text-decoration: none">王老师 <span class="badge">42</span></a> <span class="caret"></span> </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">消息1</a></li>
+                                    <li><a href="#">消息2</a></li>
+                                    <li><a href="#">消息3</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="studentInformation.html"><span class="glyphicon glyphicon-cog"></span> 修改个人信息</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn-primary" style="background:#0088cc">注销</button>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
         </div>
-         <div class                                                 ="modal fade" id="createHomework" tabindex="-1" role="dialog"
-   aria-labelledby                                                  ="myModalLabel" aria-hidden="true">
-                           <div class                               ="modal-dialog">
-                              <div class                            ="modal-content">
-                                 <div class                         ="modal-header">
-                                    <button type                    ="button" class="close"
-                                       data-dismiss                 ="modal" aria-hidden="true">
-                                          &times;
-                                    </button>
-                                    <h4 class                       ="modal-title" id="myModalLabel">
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-2" id="myScrollspy">
+                <ul class="nav nav-tabs nav-stacked" id="sideNav" data-spy="affix" data-offset-top="50">
+                    <li><a href="teacherCourseCenter.html"><span class="glyphicon glyphicon-home"
+                         aria-hidden                                ="true"></span> 课程主页</a></li>
+                    <li><a href="teacherCourseResource.html"><span class="glyphicon glyphicon-folder-open"
+                         aria-hidden                                ="true"></span> 课程资源</a></li>
+                    <li class="active"><a href="teacherCourseHomework.html"><span class="glyphicon glyphicon-pencil"
+                         aria-hidden                                ="true"></span> 课程作业</a></li>
+                </ul>
+            </div>
+            <div class="modal fade" id="createHomework" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+                            <h4 class="modal-title" id="myModalLabel">
                                        创建作业
-                                    </h4>
-                                 </div>
-                                 <div class                         ="modal-body">
-                                    <form class                     ="form-horizontal" role="form">
-                    <div class                                      ="form-group">
-                        <label for                                  ="name" class="col-sm-2 control-label">作业标题</label>              
-                        <div class                                  ="col-sm-10">
-                        <input type                                 ="text" class="form-control" id="homeworkTitle" name="homeworkTitle" placeholder="">
+                                    </h4> </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label">作业标题</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="homeworkTitle" name="homeworkTitle" placeholder=""> </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="priTime" class="col-sm-2 control-label">创建时间</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="priTime" name="priTime" placeholder=""> </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taitime" class="col-sm-2 control-label">截至时间</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="taiTime" name="taiTime" placeholder=""> </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="need" class="col-sm-2 control-label">作业要求</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" id="need" name="need" rows="12"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭 </button>
+                            <button type="button" class="btn btn-primary" style="background:#0088cc"> 提交 </button>
                         </div>
                     </div>
-                    <div class                                      ="form-group">
-                        <label for                                  ="priTime" class="col-sm-2 control-label">创建时间</label>
-                        <div class                                  ="col-sm-10">
-                            <input type                             ="text" class="form-control" id="priTime" name="priTime" placeholder="">
-                        </div>
-                    </div>
-                    <div class                                      ="form-group">
-                        <label for                                  ="taitime" class="col-sm-2 control-label">截至时间</label>
-                        <div class                                  ="col-sm-10">
-                            <input type                             ="text" class="form-control" id="taiTime" name="taiTime" placeholder="">
-                        </div>
-                    </div>
-                    <div class                                      ="form-group">
-                        <label for                                  ="need" class="col-sm-2 control-label">作业要求</label>
-                        <div class                                  ="col-sm-10">
-                            <textarea class                         ="form-control" id="need" name="need" rows="12"></textarea>
-                        </div>
-                    </div>
-                </form>
-                                 </div>
-                                 <div class                         ="modal-footer">
-                                    <button type                    ="button" class="btn btn-default"
-                                       data-dismiss                 ="modal">关闭
-                                    </button>
-                                    <button type                    ="button" class="btn btn-primary" style="background:#0088cc">
-                                       提交
-                                    </button>
-                                 </div>
-                              </div><!-- /.modal-content -->
-                            </div>
-                        </div>
-        <div class                                                  ="col-xs-12 col-lg-10">
-            <div class                                              ="contain-header page-header">
-                <h2>管理作业</h2>
+                    <!-- /.modal-content -->
+                </div>
             </div>
-            <div>
-            <table class                                            ="table table-striped" id="homeworkList">   
-                <div class                                          ="col-xs-12 col-lg-12"><p style="padding:4px;"></p></div>
-                    <div class                                      ="btn-group">
-                        <button type                                ="button" class="btn btn-primary" style="background:#0088cc" data-toggle="modal"
-   data-target                                                      ="#createHomework">创建作业</button>
-                    <button type                                    ="button" class="btn btn-primary" style="background:#0088cc">删除作业</button>
-                    </div>
-                <div class                                          ="col-xs-12 col-lg-12"><p style="padding:4px;"></p></div>
-                <caption style                                      ="align:left">
-                    作业列表
-                </caption>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>作业标题</th>
-                        <th>发布时间</th>
-                        <th>截至时间</th>
-                        <th>提交人数</th>
-                        <th>操作</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style                                   ="width:4%;text-align:center"><input type="checkbox" id="teamCheck" value="1"></td>
-                        <td>第一次作业</td>
-                        <td>2016/6/1</td>
-                        <td>2016/7/1</td>
-                        <td>38/42</td>
-                        <td><button class                           ="btn btn-primary btn-xs" style="background:#0088cc" data-toggle="modal"
-   data-target                                                      ="#homeworkDetail">详情</button></td>
-                    </tr>
-                </tbody>
-            </table>
-                <div class                                          ="modal fade" id="homeworkDetail" tabindex="-1" role="dialog"
-   aria-labelledby                                                  ="myModalLabel" aria-hidden="true">
-                           <div class                               ="modal-dialog"  style="width:60%;">
-                              <div class                            ="modal-content">
-                                 <div class                         ="modal-header">
-                                    <button type                    ="button" class="close"
-                                       data-dismiss                 ="modal" aria-hidden="true">
-                                          &times;
-                                    </button>
-                                    <h4 class                       ="modal-title" id="showHomeworkTitle">
+            <div class="col-xs-12 col-lg-10">
+                <div class="contain-header page-header">
+                    <h2>管理作业</h2> </div>
+                <div>
+                    <table class="table table-striped" id="homeworkList">
+                        <div class="col-xs-12 col-lg-12">
+                            <p style="padding:4px;"></p>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary" style="background:#0088cc" data-toggle="modal" data-target="#createHomework">创建作业</button>
+                            <button type="button" class="btn btn-primary" style="background:#0088cc">删除作业</button>
+                        </div>
+                        <div class="col-xs-12 col-lg-12">
+                            <p style="padding:4px;"></p>
+                        </div>
+                        <caption style="align:left"> 作业列表 </caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>作业标题</th>
+                                <th>发布时间</th>
+                                <th>截至时间</th>
+                                <th>提交人数</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width:4%;text-align:center">
+                                    <input type="checkbox" id="teamCheck" value="1"> </td>
+                                <td>第一次作业</td>
+                                <td>2016/6/1</td>
+                                <td>2016/7/1</td>
+                                <td>38/42</td>
+                                <td>
+                                    <button class="btn btn-primary btn-xs" style="background:#0088cc" data-toggle="modal" data-target="#homeworkDetail">详情</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="modal fade" id="homeworkDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" style="width:60%;">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times; </button>
+                                    <h4 class="modal-title" id="showHomeworkTitle">
                                        第一次作业
-                                    </h4>
-                                 </div>
-                                 <div class                         ="modal-body">
-                                    <form class                     ="form-horizontal" role="form">
-                    <div class                                      ="form-group">
-                        <label for                                  ="handinList" class="col-sm-1 control-label">人员名单</label>
-                        <div class                                  ="col-sm-11">
-                            <table class                            ="table table-stripped" style="table-layout:automatic;">
-                                <caption style                      ="align:left">
-                                    已提交名单
-                                </caption>
-                                <thead>
-                                    <tr>
-                                        <th>姓名</th>
-                                        <th>学号</th>
-                                        <th>院系</th>
-                                        <th>email</th>
-                                        <th style                   ="width:10%;">附件</th>
-                                        <th style                   ="width:10%;">成绩</th>
-                                    </tr>
-                                </thead>
-                            <tbody>
-                                <tr>
-                                    <td>zhangsan</td>
-                                    <td>13211200</td>
-                                    <td>软件</td>
-                                    <td>zhangsan@163.com</td>
-                                    <td><button type                ="button" class="btn btn-primary btn-xs" style="background:#0088cc" href="">下载</button></td>
-                                    <td><form><input type           ="text" class="form-control" id="score" name="score" placeholder=""></form></td>
-                                </tr>
-                            </tbody>
-                            </table>
-                            <table class                            ="table table-stripped" style="table-layout:automatic;">
-                                <caption style                      ="align:left">
-                                    未提交名单
-                                </caption>
-                                <thead>
-                                    <tr>
-                                        <th>姓名</th>
-                                        <th>学号</th>
-                                        <th>院系</th>
-                                        <th>email</th>
-                                        <th style                   ="width:10%;">操作</th>
-                                        <th style                   ="width:10%;">成绩</th>
-                                    </tr>
-                                </thead>
-                            <tbody>
-                                <tr>
-                                    <td>zhangsan</td>
-                                    <td>13211200</td>
-                                    <td>软件</td>
-                                    <td>asdfzxcv@163.com</td>
-                                   <td><button type                 ="button" class="btn btn-primary btn-xs" style="background:#0088cc">
-                                       提醒
-                                    </button>
-                                       </td>
-                                    <td><form><input type           ="text" class="form-control" id="score" name="score" placeholder=""></form></td>
-                                </tr>
-                            </tbody>
-                            </table>
-                                                        <div class  ="pull-right">
-                                    <button type                    ="button" class="btn btn-primary" style="background:#0088cc">
-                                       保存
-                                    </button>
+                                    </h4> </div>
+                                <div class="modal-body">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="handinList" class="col-sm-1 control-label">人员名单</label>
+                                            <div class="col-sm-11">
+                                                <table class="table table-stripped" style="table-layout:automatic;">
+                                                    <caption style="align:left"> 已提交名单 </caption>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>姓名</th>
+                                                            <th>学号</th>
+                                                            <th>院系</th>
+                                                            <th>email</th>
+                                                            <th style="width:10%;">附件</th>
+                                                            <th style="width:10%;">成绩</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>zhangsan</td>
+                                                            <td>13211200</td>
+                                                            <td>软件</td>
+                                                            <td>zhangsan@163.com</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-xs" style="background:#0088cc" href="">下载</button>
+                                                            </td>
+                                                            <td>
+                                                                <form>
+                                                                    <input type="text" class="form-control" id="score" name="score" placeholder=""> </form>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table table-stripped" style="table-layout:automatic;">
+                                                    <caption style="align:left"> 未提交名单 </caption>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>姓名</th>
+                                                            <th>学号</th>
+                                                            <th>院系</th>
+                                                            <th>email</th>
+                                                            <th style="width:10%;">操作</th>
+                                                            <th style="width:10%;">成绩</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>zhangsan</td>
+                                                            <td>13211200</td>
+                                                            <td>软件</td>
+                                                            <td>asdfzxcv@163.com</td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-primary btn-xs" style="background:#0088cc"> 提醒 </button>
+                                                            </td>
+                                                            <td>
+                                                                <form>
+                                                                    <input type="text" class="form-control" id="score" name="score" placeholder=""> </form>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="pull-right">
+                                                    <button type="button" class="btn btn-primary" style="background:#0088cc"> 保存 </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭 </button>
+                                    <button type="button" class="btn btn-primary" style="background:#0088cc"> 提交 </button>
+                                </div>
                             </div>
+                            <!-- /.modal-content -->
                         </div>
                     </div>
-                </form>
-                                 </div>
-                                 <div class                         ="modal-footer">
-                                    <button type                    ="button" class="btn btn-default"
-                                       data-dismiss                 ="modal">关闭
-                                    </button>
-                                    <button type                    ="button" class="btn btn-primary" style="background:#0088cc">
-                                       提交
-                                    </button>
-                                 </div>
-                              </div><!-- /.modal-content -->
-                            </div>
-                        </div>
+                </div>
             </div>
-         </div>
+        </div>
     </div>
-</div>
-<footer class                                                       ="row-footer" id = "contact">
-        <div class                                                  ="container">
-            <div class                                              ="row">             
-                <div class                                          ="col-xs-12">
-                    <p style                                        ="padding:10px;"></p>
-                    <p align                                        =center>© Copyright 2015 四叶草组</p>
+    <footer class="row-footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>© Copyright 2015 四叶草组</p>
                 </div>
             </div>
         </div>
     </footer>
 </body>
-    <script type                                                    ="text/javascript">  
-    function show1(){  
-      var tag1                                                      =document.getElementById("teamTag1");  
-      var tag2                                                      =document.getElementById("teamTag2"); 
-      var page1                                                     =document.getElementById("pageShow1");  
-      var page2                                                     =document.getElementById("pageShow2"); 
-     if(page1.style.display                                         =='none')
-     {
-         page1.style.display                                        ='block';
-         page2.style.display                                        ='none';
-         $(tag1).addClass("active");
-         $(tag2).removeClass("active");
-     }   
+<script type="text/javascript">
+    function show1() {
+        var tag1 = document.getElementById("teamTag1");
+        var tag2 = document.getElementById("teamTag2");
+        var page1 = document.getElementById("pageShow1");
+        var page2 = document.getElementById("pageShow2");
+        if (page1.style.display == 'none') {
+            page1.style.display = 'block';
+            page2.style.display = 'none';
+            $(tag1).addClass("active");
+            $(tag2).removeClass("active");
+        }
     }
-    function show2(){  
-      var tag1                                                      =document.getElementById("teamTag1");  
-      var tag2                                                      =document.getElementById("teamTag2"); 
-      var page1                                                     =document.getElementById("pageShow1");  
-      var page2                                                     =document.getElementById("pageShow2"); 
-     if(page2.style.display                                         =='none')
-     {
-         page2.style.display                                        ='block';
-         page1.style.display                                        ='none';
-         $(tag2).addClass("active");
-         $(tag1).removeClass("active");
-     }   
+
+    function show2() {
+        var tag1 = document.getElementById("teamTag1");
+        var tag2 = document.getElementById("teamTag2");
+        var page1 = document.getElementById("pageShow1");
+        var page2 = document.getElementById("pageShow2");
+        if (page2.style.display == 'none') {
+            page2.style.display = 'block';
+            page1.style.display = 'none';
+            $(tag2).addClass("active");
+            $(tag1).removeClass("active");
+        }
     }
-    </script>
+</script>
+
 </html>

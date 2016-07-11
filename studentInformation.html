@@ -1,149 +1,138 @@
 <!DOCTYPE html>
-<html lang                                  ="zh-CN">
+<html lang="zh-CN">
 
 <head>
-  <meta charset                             ="utf-8">
-  <meta http-equiv                          ="X-UA-Compatible" content="IE=edge">
-  <meta name                                ="viewport" content="width=device-width, initial-scale=1">
-  <title>学生基本信息</title>
-  <link rel                                 ="stylesheet" href="css/bootstrap.min.css">
-  <link rel                                 ="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel                                 ="stylesheet" href="css/mystyles.css">
-  <link rel                                 ="stylesheet" href="css/font-awesome.min.css">
-  <link rel                                 ="stylesheet" href="css/bootstrap-social.css">
-  <script src                               ="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-    <script src                             ="js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学生基本信息</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body data-spy                              ="scroll" data-target="#myScrollspy">
-    <nav class                              ="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class                              ="container">
-      <div class                            ="navbar-header">
-        <button type                        ="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class                       ="sr-only"></span>
-          <span class                       ="icon-bar"></span>
-          <span class                       ="icon-bar"></span>
-          <span class                       ="icon-bar"></span>
-        </button>
-        <a class                            ="navbar-brand" href="studentInformation.html"><img src="img/logo.png" height="30" width="70"></a>
-      </div>
-      <div id                               ="navbar" class="navbar-collapse collapse">
-        <ul class                           ="nav navbar-nav">
-          <li class                         = "active"><a href="studentInformation.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
-        </ul>
-        <ul class                           ="navbar-form navbar-right">
-           <ul class                        ="nav nav-pills" role="tablist">
-              <li><div class                ="btn-group">
-   <button type                             ="button" class="btn btn-primary dropdown-toggle" 
-      data-toggle                           ="dropdown" style ="background:#0088cc">
-      <a href                               ="#" style="color:#fff;text-decoration: none">13211093 <span class="badge">42</span></a> <span class="caret"></span>
-   </button>
-   <ul class                                ="dropdown-menu" role="menu">
-      <li><a href                           ="#">消息1</a></li>
-      <li><a href                           ="#">消息2</a></li>
-      <li><a href                           ="#">消息3</a></li>
-      <li class                             ="divider"></li>
-      <li><a href                           ="studentInformation.html"><span class="glyphicon glyphicon-cog"></span> 修改个人信息</a></li>
-   </ul>
-</div></li>
-              <li><button type              ="submit" class="btn btn-primary" style = "background:#0088cc">注销</button></a></li>
-            </ul>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<div class                                  ="container">
-     <div class                             ="row">
-            <div class                      ="col-xs-12 col-lg-2" id="myScrollspy">
-                <ul class                   ="nav nav-tabs nav-stacked" id="sideNav" data-spy="affix" data-offset-top="50">
-                    <li class               ="active"><a href="studentInformation.html"><span class="glyphicon glyphicon-user"
+<body data-spy="scroll" data-target="#myScrollspy">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="studentInformation.html"><img src="img/logo.png" height="30" width="70"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="studentInformation.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                </ul>
+                <ul class="navbar-form navbar-right">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="background:#0088cc"> <a href="#" style="color:#fff;text-decoration: none">13211093 <span class="badge">42</span></a> <span class="caret"></span> </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">消息1</a></li>
+                                    <li><a href="#">消息2</a></li>
+                                    <li><a href="#">消息3</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="studentInformation.html"><span class="glyphicon glyphicon-cog"></span> 修改个人信息</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn-primary" style="background:#0088cc">注销</button>
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-2" id="myScrollspy">
+                <ul class="nav nav-tabs nav-stacked" id="sideNav" data-spy="affix" data-offset-top="50">
+                    <li class="active"><a href="studentInformation.html"><span class="glyphicon glyphicon-user"
                          aria-hidden        ="true"></span> 学生基本信息</a></li>
-                    <li><a href             ="courseInformation.html"><span class="glyphicon glyphicon-education"
+                    <li><a href="courseInformation.html"><span class="glyphicon glyphicon-education"
                          aria-hidden        ="true"></span> 课程信息</a></li>
                 </ul>
             </div>
-            <div class                      ="col-xs-12 col-lg-10">
-             <div class                     ="container-header page-header">
+            <div class="col-xs-12 col-lg-10">
+                <div class="container-header page-header">
                     <h2>学生信息</h2>
                     <p>以下为学生相关信息</p>
-            </div> 
-             <div class                     ="row row-content">
-            <div class                      ="col-xs-12 col-lg-9">
-                <form class                 ="form-horizontal" role="form">
-                    <div class              ="form-group">
-                        <label for          ="name" class="col-sm-2 control-label">姓名</label>                        
-                        <div class          ="col-sm-10">
-                        <input type         ="text" class="form-control" id="name" name="name" placeholder="张三">
-                        </div>
+                </div>
+                <div class="row row-content">
+                    <div class="col-xs-12 col-lg-9">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 control-label">姓名</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="张三"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-2 control-label">账号</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="account" name="account" placeholder="zhangsan88"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-2 control-label">密码</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码！"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-sm-2 control-label">确认密码</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="再次输入密码！"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailid" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="emailid" name="emailid" placeholder="zhangsan@163.com"> </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailid" class="col-sm-2 control-label">年级</label>
+                                <div class="col-sm-3">
+                                    <select class="form-control">
+                                        <option>大一</option>
+                                        <option>大二</option>
+                                        <option>大三</option>
+                                        <option>大四</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback" class="col-sm-2 control-label">个人简介</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" id="introduction" name="introduction" rows="12"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary" style="background:#0088cc">确认修改</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class              ="form-group">
-                        <label for          ="lastname" class="col-sm-2 control-label">账号</label>
-                        <div class          ="col-sm-10">
-                            <input type     ="text" class="form-control" id="account" name="account" placeholder="zhangsan88">
-                        </div>
+                    <div class="col-xs-12 col-lg-3">
+                        <p style="padding:20px;"></p>
                     </div>
-                    <div class              ="form-group">
-                        <label for          ="lastname" class="col-sm-2 control-label">密码</label>
-                        <div class          ="col-sm-10">
-                            <input type     ="password" class="form-control" id="password" name="password" placeholder="请输入密码！">
-                        </div>
-                    </div>
-                    <div class              ="form-group">
-                        <label for          ="lastname" class="col-sm-2 control-label">确认密码</label>
-                        <div class          ="col-sm-10">
-                            <input type     ="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="再次输入密码！">
-                        </div>
-                    </div>
-                    <div class              ="form-group">
-                        <label for          ="emailid" class="col-sm-2 control-label">Email</label>
-                        <div class          ="col-sm-10">
-                            <input type     ="email" class="form-control" id="emailid" name="emailid" placeholder="zhangsan@163.com">
-                        </div>
-                    </div>
-                    <div class              ="form-group">
-                        <label for          ="emailid" class="col-sm-2 control-label">年级</label>
-                        <div class          ="col-sm-3">
-                            <select class   ="form-control">
-                                <option>大一</option>
-                                <option>大二</option>
-                                <option>大三</option>
-                                <option>大四</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class              ="form-group">
-                        <label for          ="feedback" class="col-sm-2 control-label">个人简介</label>
-                        <div class          ="col-sm-10">
-                            <textarea class ="form-control" id="introduction" name="introduction" rows="12"></textarea>
-                        </div>
-                    </div>
-                    <div class              ="form-group">
-                        <div class          ="col-sm-offset-2 col-sm-10">
-                            <button type    ="submit" class="btn btn-primary" style="background:#0088cc">确认修改</button>
-                        </div>
-                    </div>
-                </form>
-                
+                </div>
             </div>
-             <div class                     ="col-xs-12 col-lg-3">
-                <p style                    ="padding:20px;"></p>
-            </div>
-       </div>
-         </div>
+        </div>
     </div>
-</div>
-    <footer class                           ="row-footer">
-        <div class                          ="container">
-            <div class                      ="row">                       
-                <div class                  ="col-xs-12">
-                    <p style                ="padding:10px;"></p>
-                    <p align                =center>© Copyright 2015 四叶草组</p>
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>© Copyright 2015 四叶草组</p>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
-    
 </html>
